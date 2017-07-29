@@ -1,0 +1,46 @@
+app-main{
+  .logo{
+    position:absolute;
+    left:100px;
+    top:0;
+    width:203px;
+    height:106px;
+    z-index: 1000;
+    background-image: url(../../../assets/lol_logo.png);
+    background-repeat:no-repeat;
+  }
+  .main-background{
+    position:absolute;
+    top:90px;
+    left:0;
+    right:0;
+    bottom:0;
+    contain:layout size style;
+    overflow:hidden;
+    background-color: #000000;
+    background-image: url(../../../assets/bg-wrap.jpg);
+    background-repeat:no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+  }
+  .container {
+    position:absolute;
+    width: 100%;
+    min-width:1280px;
+  }
+  .main-title {
+    position: relative;
+    height: 50px;
+    min-width:1280px;
+    width: auto;
+    margin-top: 30px;
+    color: #ffcb60;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,232,184,1)), to(rgba(175,133,48,1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

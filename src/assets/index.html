@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="gbk">
+  <meta name="robots" content="all">
+  <meta name="author" content="Tencent-CP">
+  <meta name="Copyright" content="Tencent">
+  <meta name="Description" content="新英雄 影流之镰 凯隐 销售专题">
+  <meta name="Keywords" content="英雄联盟,新英雄,影流之镰,凯隐">
+  <title>影流之镰 凯隐—英雄联盟官方网站—腾讯游戏</title>
+  <!-- 设计：cp  |  重构：cp  |  创建：2017-07-17 -->
+  <style>
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+    table{border-collapse:collapse;border-spacing:0}
+    fieldset,img{border:0}
+    img{ display: block;}
+    div,a{ outline: none;}
+    address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}
+    ol,ul{list-style:none}
+    caption,th{text-align:left}
+    h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+    h1,.hid{ width: 100%;height: 0; font-size: 0; text-indent: -9999em; line-height: 500%; overflow: hidden;}
+    q:before,q:after{content:''}
+    a{ text-decoration: none;}
+    abbr,acronym{border:0;font-variant:normal}
+    sup{vertical-align:text-top}
+    sub{vertical-align:text-bottom}
+    input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+    input,textarea,select{*font-size: 100%}
+    body{ font:12px/1.5 '\5FAE\8F6F\96C5\9ED1','\5b8b\4f53', sans-serif; background: #1f2231;}
+
+    .none{ display: none;}
+    .pr{position: relative;}
+    .pa{position: absolute;}
+    .db{display: block;}
+    .dil{display: inline-block; vertical-align: middle;}
+    .fl{float: left;}
+    .fr{float: right;}
+    .bc{margin-left: auto; margin-right: auto;}
+    .txc{text-align: center;}
+    .txr{text-align: right;}
+    .ht{text-indent: -9999em;overflow: hidden;}
+    .ovh{overflow: hidden;}
+    .clearfix:after{ visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+    *html .clearfix{ height: 0; zoom: 1; } /* IE6 */
+    *:first-child+html .clearfix{ zoom: 1; } /* IE7 */
+
+    .wrap{ width: 100%; min-width: 1240px; _width: expression((document.documentElement.clientWidth || document.body.clientWidth) < 1240 ? '1240px' : '');}
+    .spr{ background: url(//game.gtimg.cn/images/lol/act/a20170717kayn/sprites.png) no-repeat;}
+    .bg-wrap{ position: relative; width: 100%; background-repeat: no-repeat; background-position: center top; overflow: hidden;}
+    .bg-wrap-1{ height: 1050px; background-image: url(//game.gtimg.cn/images/lol/act/a20170717kayn/bg-wrap-1.jpg); }
+    .bg-wrap-2{ height: 557px; background-image: url(//game.gtimg.cn/images/lol/act/a20170717kayn/bg-wrap-2.jpg); }
+    .bg-wrap-3{ height: 1129px; background-image: url(//game.gtimg.cn/images/lol/act/a20170717kayn/bg-wrap-3.jpg); }
+    .bg-wrap-4{ height: 1185px; background-image: url(//game.gtimg.cn/images/lol/act/a20170717kayn/bg-wrap-4.jpg); }
+    .bg-wrap-5{ height: 1434px; background-image: url(//game.gtimg.cn/images/lol/act/a20170717kayn/bg-wrap-5.jpg); }
+    .content{ width: 1240px; height: 100%; margin: 0 auto; background-repeat: no-repeat; }
+    .header{ background-image: url(//game.gtimg.cn/images/lol/act/a20170717kayn/bg1.jpg); }
+    .top-logo{ top: 35px; left: 20px; z-index: 9; width: 203px; height: 106px; background: url(//game.gtimg.cn/images/lol/act/a20170717kayn/logo.png) no-repeat; }
+    .top-video{ top: 0; left: 50%; z-index: 2; width: 1920px; height: 1050px; margin-left: -960px; }
+    .top-video .video-box{ width: 1920px; height: 1040px; }
+    .top-video video{ width: 1920px; height: 1050px; }
+    .top-video .mask{ bottom: 0; left: 0; z-index: 5; width: 100%; height: 30px; background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(5, 5, 7, 1)); background: linear-gradient(rgba(0, 0, 0, 0), rgba(5, 5, 7, 1)); }
+    .top-tit{ top: 455px; left: 50%; z-index: 3; width: 660px; height: 546px; margin-left: -330px; background: url(//game.gtimg.cn/images/lol/act/a20170717kayn/title.png) no-repeat; }
+    .header-video{ z-index: 5; height: 74px; padding: 733px 0 0 819px; margin-bottom: 213px; }
+    .header-video a{ width: 65px; height: 74px; background-position: 0 -294px; }
+    .header-video a:hover{ background-position: -67px -294px; }
+    .login{ z-index: 5; height: 30px; font-size: 14px; line-height: 30px; color: #fff; }
+    .login a{ color: #fff; }
+    .login a:hover{ color: #989eb4; }
+    .content-1{ background-image: url(//game.gtimg.cn/images/lol/act/a20170717kayn/bg2.jpg); }
+    .intro{ height: 231px; padding: 196px 236px 0; font-size: 16px; line-height: 32px; color: #beb9b4; }
+    .content-2{ background-image: url(//game.gtimg.cn/images/lol/act/a20170717kayn/bg3.jpg); }
+    .skill{ padding-top: 170px; }
+    .skill-video{ width: 887px; height: 499px; padding: 19px 12px 19px 13px; margin-bottom: 37px; }
+    .skill-lists{ height: 119px; }
+    .skill-lists ul{ padding-left: 360px; }
+    .skill-lists li{ margin-right: 34px; }
+    .skill-lists a{ width: 60px; height: 60px; padding: 3px; font-size: 16px; line-height: 36px; color: #fff; text-transform: uppercase; border: 1px solid #b0131f; }
+    .skill-lists a:hover,
+    .skill-lists a.current{ color: #dabd81; border-color: #dabd81; }
+    .skill-lists .line{ padding-top: 10px; }
+    .skill-lists .line span{ width: 10px; height: 47px; background-position: -134px -294px; }
+    .skill-caption{ height: 118px; padding: 11px 164px 0; }
+    .skill-caption .skill-text{ display: none; }
+    .skill-caption .skill-text-1{ display: block; }
+    .skill-caption .skill-text h3{ font-size: 20px; font-weight: normal; line-height: 34px; color: #c8223e; }
+    .skill-caption .skill-text p{ font-size: 14px; line-height: 24px; color: #fffffe; }
+    .skill-caption .skill-text span{ color: #dabd81; }
+    .content-3{ background-image: url(//game.gtimg.cn/images/lol/act/a20170717kayn/bg4.jpg); }
+    .buy{ padding-top: 272px; }
+    .buy ul{ padding: 639px 0 0 13px; }
+    .buy li{ width: 389px; margin-right: 1px; }
+    .buy li a{ width: 335px; height: 145px; }
+    .buy li a:hover{ background-position: 0 -147px; }
+    .content-4{ background-image: url(//game.gtimg.cn/images/lol/act/a20170717kayn/bg5.jpg); }
+    .task{ padding-top: 228px; }
+    .task-times{ height: 34px; margin-bottom: 479px; font-size: 20px; line-height: 34px; color: #baa16e; }
+    .task-times strong{ font-weight: bold; color: #b0131f; }
+    .task-times span{ color: #b0131f; }
+    .task-type{ height: 429px; padding-left: 121px; }
+    .task-con{ width: 372px; height: 236px; padding: 193px 46px 0; margin-right: 69px; }
+    .task-tit{ height: 72px; font-size: 28px; line-height: 71px; color: #fff; }
+    .task-tit strong{ font-weight: bold; }
+    .task-text{ padding-top: 17px; }
+    .task-text p{ padding-left: 12px; font-size: 14px; line-height: 26px; color: #fff; text-indent: -12px; }
+    .task-text span{ margin-right: 4px; }
+
+    .pop-video{ display: none; width: 800px; height: 450px; background-color: #000; }
+    .pop-video .close{ top: 0; right: -50px; width: 50px; height: 50px; font-size: 60px; line-height: 43px; color: #c7ac75; }
+    .pop-video .close:hover{ color: #f5e4c2; }
+
+    .sidebar{ position: fixed; _position: absolute; top: 140px; _top:expression(documentElement.scrollTop + 140); right: 0; z-index: 997;}
+    .sidebar .nav{ padding-right: 1px; margin-bottom: 30px; }
+    .sidebar .nav ul{ width: 165px; border-top: 1px solid #574230; border-color: rgba(87, 66, 48, .6); }
+    .sidebar .nav li{ width: 100%; border-bottom: 1px solid #574230; border-color: rgba(87, 66, 48, .6); }
+    .sidebar .nav a{ width: 100%; height: 62px; font-size: 16px; line-height: 62px; color: #907d55; }
+    .sidebar .nav a span{ padding: 0 18px; cursor: pointer; }
+    .sidebar .nav a i{ top: 50%; display: none; width: 9px; height: 9px; margin-top: -4px; background-position: -252px -294px; }
+    .sidebar .nav a i.icon-1{ left: 0; }
+    .sidebar .nav a i.icon-2{ right: 0; }
+    .sidebar .nav a.current,
+    .sidebar .nav a:hover{ color: #fff; }
+    .sidebar .nav a.current i,
+    .sidebar .nav a:hover i{ display: block; }
+    .sidebar .other-act{ width: 184px; height: 272px; padding-top: 130px; margin-right: 20px; background: url(//game.gtimg.cn/images/lol/act/a20170717kayn/act.png) no-repeat; }
+    .sidebar .other-act a{ top: 0; left: 0; width: 100%; height: 100%; background: url(about:blank); }
+    .sidebar .other-act p{ margin-bottom: 4px; font-size: 14px; line-height: 18px; color: #fff; }
+    .sidebar .other-act span{ color: #e41c1c; }
+    .sidebar .operation-btn{ top: 317px; left: -51px; display: none; width: 43px; height: 80px; padding: 21px 0 0 8px; font-size: 22px; line-height: 28px; color: #edd396; background-position: -146px -294px; }
+    .sidebar .operation-btn:hover{ background-position: -199px -294px; }
+
+    #footer_ied{ background: #0B0212; text-align: center; height: 156px; }
+    #footer_ied .wrap_ied{ width: 100%; margin: 0 auto; padding: 40px 0 0; }
+    #footer_ied p{ color: #726A85; line-height: 24px; font-size: 10px; }
+    #footer_ied a{ color: #726A85; font-size: 12px; text-decoration: none; }
+    #footer_ied a:hover{ color: #fff; }
+
+    /*2017-07-18修改*/
+    .bg-wrap-6{ height: 720px; background-image: url(//game.gtimg.cn/images/lol/act/a20170717kayn/bg-wrap-6.jpg); }
+    .content-5{ background-image: url(//game.gtimg.cn/images/lol/act/a20170717kayn/bg6.jpg); }
+    .ohter-video{ padding-top: 297px; }
+    .ohter-video ul{ padding-left: 88px; }
+    .ohter-video li{ width: 254px; margin: 0 16px 12px 0; }
+    .ohter-video a{ width: 252px; height: 141px; padding: 1px; margin-bottom: 12px; background: url(//game.gtimg.cn/images/lol/act/a20170717kayn/vid-bg.jpg) no-repeat; }
+    .ohter-video a i{ top: 50%; left: 50%; width: 70px; height: 70px; margin: -35px 0 0 -35px; background-position: -263px -292px; }
+    .ohter-video a:hover i{ background-position: -263px -364px; }
+    .ohter-video p{ height: 24px; font-size: 14px; line-height: 24px; color: #fefefe; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+    .ohter-video .no-vid img,
+    .ohter-video .no-vid a i{ display: none; }
+ </style>
+</head>
+<body>
+  <h1 class="">凯隐</h1>
+  <div class="wrap pr ovh">
+   <div class="bg-wrap bg-wrap-1">
+    <a href="//lol.qq.com/" class="top-logo pa db ht" title="英雄联盟" target="_blank" onclick="pgvSendClick({hottag:'act.a20170717kayn.link.logo'})">英雄联盟</a>
+    <div class="content header pr">
+      <div class="top-video pa">
+        <div class="video-box pr ovh">
+          <video autoplay="autoplay" loop>
+            <source src="//down.qq.com/yxgw/cp/lol/act/a20170717kayn/kayn.webm" type='video/webm'/>
+          </video>
+        </div>
+        <div class="mask pa"></div>
+      </div>
+      <div class="top-tit pa"></div>
+      <div class="header-video pr">
+        <a href="javascript:popVideo('n0524x6hsmh');" class="play-vid db ht spr" title="点击播放视频" onclick="pgvSendClick({hottag:'act.a20170717kayn.btn.playPopVid'})">点击播放视频</a>
+      </div>
+    </div>
+  </div>
+  <div class="bg-wrap bg-wrap-2">
+    <div class="content content-1">
+      <div class="intro">
+        <h2 class="none">英雄故事背景</h2>
+        <p>悉达&bull;凯隐是修炼暗影魔法的佼佼者。他战斗的意义，是为了实现自己真正的命运--有朝一日能够率领影流教派，开创艾欧尼亚霸业的新世代。凯隐大刀阔斧地挥舞着活体暗裔武器拉亚斯特，毫不畏惧它给自己的身体和思想带来的腐化作用。这样的后果只可能有两种：要么，凯隐让这把武器臣服于自己的意志；要么，这把恶毒的巨镰将他彻底吞噬，为符文之地的毁灭奏响序曲。</p>
+      </div>
+    </div>
+  </div>
+  <div class="bg-wrap bg-wrap-3">
+    <div class="content content-2">
+      <div class="skill">
+        <h2 class="none">技能介绍</h2>
+        <div class="skill-video bc">
+          <div id="video"></div>
+        </div>
+        <div class="skill-lists ovh">
+          <ul class="txc clearfix">
+            <li class="fl">
+              <a href="javascript:;" class="db current">
+                <img src="//game.gtimg.cn/images/lol/act/a20170717kayn/skill-1.jpg" width="60" height="60" alt="被动技能">
+                <strong>p</strong>
+              </a>
+            </li>
+            <li class="fl line">
+              <span class="db spr"></span>
+            </li>
+            <li class="fl">
+              <a href="javascript:;" class="db">
+                <img src="//game.gtimg.cn/images/lol/act/a20170717kayn/skill-2.jpg" width="60" height="60" alt="被动技能">
+                <strong>q</strong>
+              </a>
+            </li>
+            <li class="fl">
+              <a href="javascript:;" class="db">
+                <img src="//game.gtimg.cn/images/lol/act/a20170717kayn/skill-3.jpg" width="60" height="60" alt="被动技能">
+                <strong>w</strong>
+              </a>
+            </li>
+            <li class="fl">
+              <a href="javascript:;" class="db">
+                <img src="//game.gtimg.cn/images/lol/act/a20170717kayn/skill-4.jpg" width="60" height="60" alt="被动技能">
+                <strong>e</strong>
+              </a>
+            </li>
+            <li class="fl">
+              <a href="javascript:;" class="db">
+                <img src="//game.gtimg.cn/images/lol/act/a20170717kayn/skill-5.jpg" width="60" height="60" alt="被动技能">
+                <strong>r</strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="skill-caption">
+          <div class="skill-text skill-text-1">
+            <h3>被动：暗裔魔镰</h3>
+            <p>凯隐使用的是一把上古神兵，附在武器上的暗裔灵体拉亚斯特与凯隐一直都在角力。每场游戏中，只有一方能够胜出。击杀远程英雄会让凯隐磨练自己的暗影技艺；击杀近战英雄则会让拉亚斯特更加嗜血。如果凯隐压倒了恶灵，他就会升格为暗影刺客。如果拉亚斯特夺得了掌控，这位暗裔就会吞噬自己的宿主，化身降世。</p>
+            <p><span>暗影刺客：</span>开始与英雄进行交战的几秒钟内，造成额外魔法伤害。</p>
+            <p><span>暗裔化身：</span>对英雄造成的所有技能伤害都可回复大量生命。</p>
+          </div>
+          <div class="skill-text skill-text-2">
+            <h3>巨镰横扫</h3>
+            <p>凯隐向前冲刺，并在冲刺结束以后横扫周围的全部敌人。冲刺和横扫都会造成物理伤害。</p>
+            <p>巨镰横扫会对野怪造成额外伤害。</p>
+            <p><span>暗裔化身：</span>该技能介绍将造成基于生命百分比的额外伤害，对线上小兵以外的所有敌人均有效。</p>
+          </div>
+          <div class="skill-text skill-text-3">
+            <h3>利刃纵贯</h3>
+            <p>对直线方向上的全部敌人造成伤害并大幅减速。</p>
+            <p><span>暗影刺客：</span>留下影分身，代替凯隐施放利刃纵贯。影分身的利刃纵贯距离更远。</p>
+            <p><span>暗裔化身：</span>利刃纵贯会短暂地击飞敌人。</p>
+          </div>
+          <div class="skill-text skill-text-4">
+            <h3>掠影步</h3>
+            <p>凯隐的移动速度激增，短时间内获得穿墙能力。首次进入墙体可回复少量生命，并大幅延长掠影步的持续时间。如果凯隐正在与敌方英雄交战，则不会延长持续时间。</p>
+            <p><span>暗影刺客：</span>获得额外移动速度，且在掠影步激活期间免疫减速效果。</p>
+          </div>
+          <div class="skill-text skill-text-5">
+            <h3>裂舍影</h3>
+            <p>凯隐可以入侵附近敌方英雄的躯体，目标必须在短期内曾受到过他的伤害。入侵英雄躯体期间，凯隐无法被选定。在此期间再次施放该技能，可以提前结束入侵状态。随后凯隐从目标躯体中破膛而出，造成巨额伤害。</p>
+            <p><span>暗影刺客：</span>裂舍影可以在更远的距离上释放。在凯隐离开目标身体后，还会刷新暗裔巨镰的额外魔法伤害效果。</p>
+            <p><span>暗裔化身：</span>裂舍影会根据目标最大生命值造成百分比伤害，同时治疗自己。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-wrap bg-wrap-4">
+    <div class="content content-3">
+      <div class="buy">
+        <h2 class="none">购买英雄/皮肤</h2>
+        <ul class="clearfix">
+          <li class="fl">
+            <p class="none">影流之镰 凯隐</p>
+            <a href="http://daoju.qq.com/lol/item/8632.shtml"  target="_blank" class="db bc ht spr" title="立即购买" onclick="pgvSendClick({hottag:'act.a20170717kayn.btn.buy1'})">立即购买</a>
+          </li>
+          <li class="fl">
+            <p class="none">摄魂猎手</p>
+            <a href="http://daoju.qq.com/lol/item/8633.shtml"  target="_blank" class="db bc ht spr" title="立即购买" onclick="pgvSendClick({hottag:'act.a20170717kayn.btn.buy2'})">立即购买</a>
+          </li>
+          <li class="fl">
+            <p class="none">影流之镰 凯隐 摄魂猎手皮肤礼包</p>
+            <a href="http://daoju.qq.com/lol/item/8635.shtml"  target="_blank" class="db bc ht spr" title="立即购买" onclick="pgvSendClick({hottag:'act.a20170717kayn.btn.buy3'})">立即购买</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bg-wrap bg-wrap-5">
+    <div class="content content-4">
+      <div class="task">
+        <h2 class="none">凯隐任务介绍</h2>
+        <div class="task-times txc"><strong>任务时间：</strong>7月18日<span>版本更新后</span>8月17日23:59</div>
+        <div class="task-type clearfix">
+          <div class="task-con task-con-1 fl">
+            <div class="task-tit"><strong>刺客</strong>路线任务目标内容</div>
+            <div class="task-text">
+              <p><span>&middot;</span>在有影流凯隐(敌方、友方或自己皆可)存在的情况下进行5局游戏</p>
+              <p><span>&middot;</span>赢得一场对局</p>
+              <p><span>&middot;</span>获得一次大杀特杀</p>
+              <p><span>&middot;</span>如无特别标注，均默认以影流凯隐的形态完成。</p>
+            </div>
+          </div>
+          <div class="task-con task-con-2 fl">
+            <div class="task-tit"><strong>战士</strong>路线任务目标内容</div>
+            <div class="task-text">
+              <p><span>&middot;</span>在有暗裔凯隐(敌方、友方或自己皆可)存在的情况下进行5局游戏</p>
+              <p><span>&middot;</span>赢得一场对局</p>
+              <p><span>&middot;</span>获得一次双杀</p>
+              <p><span>&middot;</span>如无特别标注，均默认以暗裔凯隐的形态完成。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-wrap bg-wrap-6">
+    <div class="content content-5">
+      <h2 class="none">精彩视频</h2>
+      <div class="ohter-video">
+        <ul class="clearfix">
+          <li class="fl">
+            <a href="javascript:popVideo('q0524sdzadp');" class="pr db ovh" title="点击播放视频" onclick="pgvSendClick({hottag:'act.a20170717kayn.btn.playOtherVid1'})">
+              <img src="//game.gtimg.cn/images/lol/act/a20170717kayn/vid-pic1.jpg" width="250" height="139">
+              <i class="pa db spr"></i>
+            </a>
+            <p>新英雄介绍视频：影流之镰 凯隐</p>
+          </li>
+          <li class="fl">
+            <a href="javascript:popVideo('c0525xoyl42');" class="pr db ovh" title="点击播放视频" onclick="pgvSendClick({hottag:'act.a20170717kayn.btn.playOtherVid2'})">
+              <img src="//game.gtimg.cn/images/lol/act/a20170717kayn/vid-pic2.jpg" width="250" height="139">
+              <i class="pa db spr"></i>
+            </a>
+            <p>教你一招：凯隐无伤打野秒杀连招</p>
+          </li>
+          <li class="fl">
+            <a href="javascript:popVideo('e0527q5s94x');" class="pr db ovh" title="点击播放视频" onclick="pgvSendClick({hottag:'act.a20170717kayn.btn.playOtherVid3'})">
+              <img src="//game.gtimg.cn/images/lol/act/a20170717kayn/vid-pic3.jpg" width="250" height="139">
+              <i class="pa db spr"></i>
+            </a>
+            <p>教你一招：凯隐上单对线技巧教学</p>
+          </li>
+          <li class="fl no-vid">
+            <a href="javascript:alert('敬请期待！');" class="pr db ovh" title="点击播放视频" onclick="pgvSendClick({hottag:'act.a20170717kayn.btn.playOtherVid4'})">
+              <img src="//game.gtimg.cn/images/lol/act/a20170717kayn/vid-pic2.jpg" width="250" height="139">
+              <i class="pa db spr"></i>
+            </a>
+            <p>敬请期待！</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="sidebar" id="sidebar">
+  <div class="nav clearfix">
+    <ul class="fr">
+      <li class="fl">
+        <a href="javascript:pageSlide('.content-1');" class="db" title="故事背景"><span class="pr"><i class="icon-1 pa db spr"></i>故事背景<i class="icon-2 pa db spr"></i></span></a>
+      </li>
+      <li class="fl">
+        <a href="javascript:pageSlide('.content-2');" class="db" title="技能介绍"><span class="pr"><i class="icon-1 pa db spr"></i>技能介绍<i class="icon-2 pa db spr"></i></span></a>
+      </li>
+      <li class="fl">
+        <a href="javascript:pageSlide('.content-3');" class="db" title="购买皮肤"><span class="pr"><i class="icon-1 pa db spr"></i>购买皮肤<i class="icon-2 pa db spr"></i></span></a>
+      </li>
+      <li class="fl">
+        <a href="javascript:pageSlide('.content-4');" class="db" title="任务介绍"><span class="pr"><i class="icon-1 pa db spr"></i>任务介绍<i class="icon-2 pa db spr"></i></span></a>
+      </li>
+      <li class="fl">
+        <a href="javascript:pageSlide('.content-5');" class="db" title="精彩视频"><span class="pr"><i class="icon-1 pa db spr"></i>精彩视频<i class="icon-2 pa db spr"></i></span></a>
+      </li>
+    </ul>
+  </div>
+  <div class="other-act pr txc">
+    <a href="http://lol.qq.com/webplat/info/news_version3/152/4585/4586/m3238/201707/609691.shtml" target="_blank" class="pa db ht" title="查看详情" onclick="pgvSendClick({hottag:'act.a20170717kayn.link.otheract'})">go</a>
+    <p>7月18日 - 7月30日<br><span> (18:00-23:59开放)</span></p>
+    <p>逢周末全天<span>24小时</span>开放</p>
+  </div>
+  <a href="javascript:;" class="operation-btn pa txc spr" id="operation-btn" data-state="1">展开</a>
+</div>
+<div class="pop-video pr" id="pop-video">
+  <div id="pop-video-con"></div>
+  <a href="javascript:hidePopVideo();" class="close pa db txc" title="关闭">×</a>
+</div>
+<script src="//ossweb-img.qq.com/images/lol/title/lol.js"></script>
+<script src="//ossweb-img.qq.com/images/js/foot.js"></script>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<script src="//ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
+<script>
+  // 弹窗组件
+  function TGDialogS(e){
+    need("biz.dialog-min",function(Dialog){
+      Dialog.show({
+        id: e,
+        bgcolor: '#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+        opacity: 70 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+      })
+    })
+  }
+  function closeDialog(){
+    need("biz.dialog-min",function(Dialog){
+      Dialog.hide()
+    })
+  }
+
+	// 视频播放
+  var player = null
+  function playVideo (id, vid, w, h, autoplay) {
+    player = new Txplayer({
+      containerId: id,
+      vid: vid,
+      width: w,
+      height: h,
+      autoplay: autoplay || false
+    })
+  }
+
+  // 切换技能视频
+  var vidArr = ['w0519s0vox3', 'k0519p9rimf', 'm0519fm5s3u', 'v0519sg3suf', 'b0519j950fw'], // 技能vid
+  skillIndex = 0,
+  $skillA = $('.skill-lists a'),
+  $skillText = $('.skill-caption .skill-text')
+  function loadSkillVideo (autoplay) {
+    playVideo('video', vidArr[skillIndex], 887, 499, autoplay)
+    $skillA.removeClass('current').eq(skillIndex).addClass('current')
+    $skillText.hide().eq(skillIndex).show()
+  }
+  $skillA.on('click', function () {
+    if ($(this).hasClass('current')) return false
+      skillIndex = $skillA.index($(this))
+    loadSkillVideo(true)
+    if(typeof(pgvMain) == 'function') pgvSendClick({hottag:'act.a20170717kayn.btn.playVid' + (skillIndex + 1)})
+  })
+  loadSkillVideo(false)
+
+  // 弹窗视频
+  function popVideo (vid) {
+    loadSkillVideo(false)
+    TGDialogS('pop-video')
+    playVideo('pop-video-con', vid, 800, 450, true)
+  }
+  function hidePopVideo () {
+    $('#pop-video-con').html('')
+    closeDialog()
+  }
+
+  // 页面滑动
+  function pageSlide(e){
+    var offset = $(e).offset().top;
+    $("html,body").stop().animate({"scrollTop": offset});
+  }
+  var scrollTop = $(window).scrollTop(),
+  $navA = $('#sidebar .nav a');
+  function sidebarNav() {
+    $('#sidebar').show()
+    if (scrollTop < $('.content-1').offset().top - 30) {
+      $('#sidebar').hide()
+      $navA.removeClass('current')
+    } else if (scrollTop >= $('.content-1').offset().top - 30 && scrollTop <= $('.content-1').offset().top + 60) {
+      $navA.removeClass('current')
+      $navA.eq(0).addClass('current')
+    } else if (scrollTop >= $('.content-2').offset().top - 30 && scrollTop <= $('.content-2').offset().top + 60) {
+      $navA.removeClass('current')
+      $navA.eq(1).addClass('current')
+    } else if (scrollTop >= $('.content-3').offset().top - 30 && scrollTop <= $('.content-3').offset().top + 60) {
+      $navA.removeClass('current')
+      $navA.eq(2).addClass('current')
+    } else if (scrollTop >= $('.content-4').offset().top - 30 && scrollTop <= $('.content-4').offset().top + 60) {
+      $navA.removeClass('current')
+      $navA.eq(3).addClass('current')
+    } else if (scrollTop >= $('.content-5').offset().top - 80) {
+      $navA.removeClass('current')
+      $navA.eq(4).addClass('current')
+    }
+  }
+  sidebarNav()
+  $(window).on('scroll', function () {
+    scrollTop = $(window).scrollTop()
+    sidebarNav()
+  })
+
+  // 导航栏显示隐藏
+  var _w = $(window).width(),
+  $sidebar = $('#sidebar'),
+  $opeBtn = $('#operation-btn'),
+  navState = false
+  function navChange() {
+    if (_w < 1460) {
+      $sidebar.stop().animate({'right': '-204px'}, function () {
+        $opeBtn.show().html('展开').attr('data-state', 1)
+      })
+    } else {
+      $sidebar.stop().animate({'right': '0px'}, function () {
+        $opeBtn.hide()
+      })
+    }
+  }
+  navChange()
+  $(window).on('resize', function () {
+    _w = $(window).width()
+    navChange()
+  })
+  $opeBtn.on('click', function () {
+    var _this = $(this)
+    if ($(this).attr('data-state') == 1) {
+      $sidebar.stop().animate({'right': '0px'}, function () {
+        _this.html('收起').attr('data-state', 0)
+      })
+    } else {
+      $sidebar.stop().animate({'right': '-204px'}, function () {
+        _this.html('展开').attr('data-state', 1)
+      })
+    }
+  })
+</script>
+<script src="//pingjs.qq.com/ping_tcss_ied.js"></script>
+<script>if(typeof(pgvMain) == 'function') pgvMain();</script>
+</body>
+</html>

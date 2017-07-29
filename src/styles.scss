@@ -5,3 +5,47 @@ html, body {
 
   height: 100%;
 }
+/*
+Site Name: LOL Website
+Site URL: http://lol.qq.com
+Author: smallni
+Author URL: http://www.smallni.com
+Description:  LOL Website Public Style
+Version: 2.0
+*/
+
+/* ====================================================================================================
+ * Public Styles (全站级公共样式)
+ * ==================================================================================================== */
+
+/* reset */
+*{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+em{font-style:normal}
+ol,ul{list-style:none}
+fieldset,img,abbr,acronym{border:0}
+input,select{font-family:Microsoft YaHei}
+input.checkbox{vertical-align:middle}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+q:before,q:after{content:''}
+body{font:normal 12px/1.6em Microsoft YaHei,Tahoma,simsun; color:#666;min-width:1280px;min-height: 720px;margin:0 auto;background:#f7f8f8}
+
+
+
+/* ====================================================================================================
+ * Header  (公共头部)
+ * ==================================================================================================== */
+
+
+.chromeframe{background: #000;color: #fff;padding: 10px 0; text-align: center;width: 100%;font-size: 14px}
+.chromeframe a{color: #F13C35}
+.header{ height:840px;min-width:1280px; overflow: hidden; -webkit-transition:all .8s ease; transition:all .8s ease; }
+.top{ position: relative; height: 90px;min-width:1280px; background: #0b0b0b}
+.top-inner{ height: 90px;min-width:1280px;min-height: 720px; text-align: center;}
+.main-nav-wrap{ margin: 0 auto; width: 360px; }
+.main-nav{ width: 360px; height: 90px; overflow: hidden; zoom: 1}
+.main-nav li{ float: left; width: 120px; height: 90px;}
+.main-nav a{ display: block; width: 100%; padding-top: 30px; text-align: center; color: #fafafa; font-size: 18px;text-decoration: none}
+.main-nav span{ display: block; font-size: 10px; color: #838383; font-family: 'Tahoma'; text-transform: uppercase}
+.main-nav a.n{ cursor: default}
+.main-nav a:hover{ text-decoration: none}

@@ -6,8 +6,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
+import { MainComponent } from './pages/main/main.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -16,13 +18,14 @@ import { ElectronService } from './providers/electron.service';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    MainComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule
   ],
   providers: [ElectronService],
   bootstrap: [AppComponent]
